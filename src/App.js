@@ -19,7 +19,7 @@ const profileContent = [
   },
   {
     id: "slack",
-    slackName: "Jeremiah Lateef",
+    slackName: "JeremiahLateef",
   },
 ];
 
