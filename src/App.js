@@ -25,21 +25,25 @@ const linksContent = [
     linkName: "Zuri Books",
     id: "books",
     link: "http://books.zuri.team/",
+    title: "You'll fnd books about coding and designs here"
   },
   {
     linkName: "Python Books",
     id: "btn__python",
     link: "https://books.zuri.team/python-for-beginners?ref_id=JeremiahLateef",
+    title: "Stuck in python? Purchase this book to help you understand the fundamentals of coding"
   },
   {
     linkName: "Background Check for Coders",
     id: "pitch",
     link: "https://background.zuri.team",
+    title: "Worried about who you're hiring? Leave that to us, we'll help screen the best for your organization!"
   },
   {
     linkName: "Design Books",
     id: "book__design",
     link: "https://books.zuri.team/design-rules",
+    title: "Download the free books to take your design skills to a higher level"
   },
 ];
 
@@ -57,7 +61,7 @@ const Profile = () => {
       </div>
       <div className="header">
         <h1 className="title-header username">Jeremiah Lateef</h1>
-        <h2 className="slack-title username" id="slack">
+        <h2 className="slack-title" id="slack">
           JeremiahLateef
         </h2>
       </div>
@@ -65,7 +69,7 @@ const Profile = () => {
   );
 };
 const Links = (props) => {
-  const { linkName, link, id } = props.links;
+  const { linkName, link, id, title } = props.links;
   return (
     <div className="links-header">
       <a
@@ -73,6 +77,7 @@ const Links = (props) => {
         target="_blank"
         rel="noreferrer"
         className="links-btn"
+        title={title}
         id={id}
       >
         {linkName}
