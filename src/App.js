@@ -56,9 +56,7 @@ const Profile = () => {
         <img src={Camera} alt="camera" className="camera-img" />
       </div>
       <div className="header">
-        <h1 className="title-header username" id="twitter">
-          Jeremiah Lateef
-        </h1>
+        <h1 className="title-header username">Jeremiah Lateef</h1>
         {/* <h2 className="slack-title username" id="slack">
           JeremiahLateef
         </h2> */}
