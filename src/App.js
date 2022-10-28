@@ -59,9 +59,9 @@ const Profile = () => {
         <h1 className="title-header username" id="twitter">
           Jeremiah Lateef
         </h1>
-        <h2 className="slack-title username" id="slack">
+        {/* <h2 className="slack-title username" id="slack">
           JeremiahLateef
-        </h2>
+        </h2> */}
       </div>
     </React.Fragment>
   );
