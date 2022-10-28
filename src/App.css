@@ -52,6 +52,7 @@ p {
   );
   cursor: pointer;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 .camera-img {
   position: absolute;
@@ -91,17 +92,20 @@ p {
   background: #eaecf0;
   border-radius: 0.5rem;
   border: none;
+  display: block;
+  text-align: center;
   width: 100%;
-}
-.links-header {
-  margin-bottom: 1.5rem;
-}
-.link {
   color: #101828;
   font-size: 16px;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+.links-header {
+  margin-bottom: 1.5rem;
+}
+/* .link {
+ 
+} */
 .icons-container {
   display: flex;
   gap: 1rem;

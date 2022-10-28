@@ -1,4 +1,6 @@
+import React from "react";
 import ProfileImage from "./Images/jeremiah-lateef.jpeg";
+
 import SlackLogo from "./Assets/slack.svg";
 import GitHubLogo from "./Assets/github-icon.svg";
 import ZuriLogo from "./Assets/zuri-logo.svg";
@@ -7,21 +9,6 @@ import ShareDesktop from "./Assets/share-button.svg";
 import IngressiveLogo from "./Assets/I4G.svg";
 import Camera from "./Assets/camera.svg";
 import "./App.css";
-
-const profileContent = [
-  {
-    id: "profile__img",
-    profileImg: { ProfileImage },
-  },
-  {
-    id: "twitter",
-    userName: "Jeremiah Lateef",
-  },
-  {
-    id: "slack",
-    slackName: "JeremiahLateef",
-  },
-];
 
 const linksContent = [
   {
@@ -56,24 +43,36 @@ const linksContent = [
   },
 ];
 
-const Profile = (props) => {
-  const { userName, slackName } = props.profiles;
+const Profile = () => {
   return (
-    <div className="header">
-      <h1 className="title-header">{userName}</h1>
-      <h2 className="slack-title">{slackName}</h2>
-    </div>
+    <React.Fragment>
+      <div className="image-cont">
+        <img
+          src={ProfileImage}
+          alt="Jeremiah Lateef"
+          className="profile-image"
+          id="profile__img"
+        />
+        <img src={Camera} alt="camera" className="camera-img" />
+      </div>
+      <div className="header">
+        <h1 className="title-header username" id="twitter">
+          Jeremiah Lateef
+        </h1>
+        <h2 className="slack-title username" id="slack">
+          JeremiahLateef
+        </h2>
+      </div>
+    </React.Fragment>
   );
 };
 const Links = (props) => {
   const { linkName, link } = props.links;
   return (
     <div className="links-header">
-      <button className="links-btn">
-        <a href={link} target="_blank" rel="noreferrer" className="link">
-          {linkName}
-        </a>
-      </button>
+      <a href={link} target="_blank" rel="noreferrer" className="links-btn">
+        {linkName}
+      </a>
     </div>
   );
 };
@@ -86,18 +85,8 @@ function App() {
           <img src={ShareDesktop} alt="share button" className="share mobile" />
           <img src={ShareMobile} alt="share button" className="share desktop" />
         </div>
-        <div className="image-cont">
-          <img
-            src={ProfileImage}
-            alt="Jeremiah Lateef"
-            className="profile-image"
-            id={profileContent[0].id}
-          />
-          <img src={Camera} alt="camera" className="camera-img" />
-        </div>
-        {profileContent.map((profile) => {
-          return <Profile key={profile.id} profiles={profile} />;
-        })}
+
+        <Profile />
         {linksContent.map((link) => {
           return <Links key={link.id} links={link} />;
         })}
