@@ -29,7 +29,7 @@ const linksContent = [
   {
     linkName: "Python Books",
     id: "btn__python",
-    link: "https://books.zuri.team/python-for-beginners?ref_id=<JeremiahLateef>",
+    link: "https://books.zuri.team/python-for-beginners?ref_id=JeremiahLateef",
   },
   {
     linkName: "Background Check for Coders",
