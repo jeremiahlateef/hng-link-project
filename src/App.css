@@ -12,7 +12,7 @@ h2,
 h3,
 p {
   color: #101828;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
 }
 .App {
   background: #fff;
@@ -98,7 +98,7 @@ p {
   color: #101828;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
 }
 .links-header {
   margin-bottom: 1.5rem;
