@@ -67,10 +67,16 @@ const Profile = () => {
   );
 };
 const Links = (props) => {
-  const { linkName, link } = props.links;
+  const { linkName, link, id } = props.links;
   return (
     <div className="links-header">
-      <a href={link} target="_blank" rel="noreferrer" className="links-btn">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="links-btn"
+        id={id}
+      >
         {linkName}
       </a>
     </div>
