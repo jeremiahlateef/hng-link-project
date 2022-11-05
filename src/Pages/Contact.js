@@ -37,6 +37,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={message}
                 placeholder="Enter your first name"
+                required
               />
             </div>
             <div className="input-div">
