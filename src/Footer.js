@@ -31,3 +31,5 @@ export const Footer = () => {
     </React.Fragment>
   );
 };
+
+export default Footer;
