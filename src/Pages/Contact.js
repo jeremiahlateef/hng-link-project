@@ -95,7 +95,7 @@ const Contact = () => {
           <input
             type="submit"
             className="btn-submit"
-            id="button__submit"
+            id="btn__submit"
             value="Send message"
           />
         </form>
